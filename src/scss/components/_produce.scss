@@ -1,0 +1,140 @@
+.produce {
+  padding-top: 188px;
+
+  // .produce__title
+
+  &__title {
+    padding-bottom: 100px;
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  // .produce__content
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // .produce__image-1
+
+  &__image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // .produce__descr
+
+  &__descr {
+    padding-top: 14px;
+    padding-bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 136%;
+    color: var(--osnovnoy);
+    @include tablet {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 139%;
+      text-align: center;
+      color: var(--osnovnoy);
+    }
+  }
+
+  // .produce__btn
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 128px;
+    right: 1px;
+    border: none;
+    background: var(--belyy-osnovnoy);
+    color: var(--zelenyy);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    letter-spacing: 0.01em;
+    padding: 10px 15px;
+    border-radius: 20px 0 19px 0;
+    width: 172px;
+    height: 41px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    @include tablet {
+      bottom: 82px;
+      right: 5px;
+    }
+
+    svg path {
+      fill: var(--zelenyy); /* Начальный цвет fill */
+      transition: fill 0.3s ease; /* Транзиция для fill */
+    }
+
+    &:hover {
+      background: var(--zelenyy);
+      color: var(--belyy-osnovnoy);
+      svg path {
+        fill: var(--belyy-osnovnoy);
+      }
+    }
+  }
+
+  // .produce__image-2
+}
+
+.pbtn1 {
+  @include mobile {
+    bottom: 106px;
+    right: 1px;
+  }
+}
+
+.pbtn2 {
+  @include mobile {
+    bottom: 105px;
+    right: 1px;
+  }
+}
+
+.pbtn3 {
+  @include mobile {
+    bottom: 80px;
+    right: 1px;
+  }
+}
+
+.pbtn4 {
+  @include mobile {
+    bottom: 105px;
+    right: 1px;
+  }
+}
+
+.pbtn5 {
+  @include mobile {
+    bottom: 105px;
+    right: 1px;
+  }
+}

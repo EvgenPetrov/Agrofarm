@@ -1,0 +1,32 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Cabin", sans-serif;
+  --second-family: "Lato", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+  --font3: "Manrope", sans-serif;
+  .container {
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 40px 15px;
+  }
+  // --content-width: 1400px;
+  // --container-offset: 15px;
+  // --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+
+  --osnovnoy: #222;
+  --zelenyy: #206b3d;
+  --seryy-tekst-1: #595566;
+  --belyy-osnovnoy: #fff;
+  --zheltyy: #ffcc4a;
+  --plashki: #f5f5f5;
+  --linii-tekst: #c1c1c1;
+  --ikonki-svetlo-zheltyy: #ffecbb;
+  --ikonki-oranzhevyy: #deaa27;
+  --ikonki-svetlo-zelenyy: #a4eda4;
+  --ikonki-zelenyy: #4eaf4e;
+  --ikonki-svetlo-seryy: #eaeaea;
+}

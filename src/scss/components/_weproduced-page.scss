@@ -1,0 +1,676 @@
+.weproduced {
+  padding-top: 158px;
+}
+
+.tabs {
+  // .tabs__nav
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  // .tabs__nav-item
+
+  // .tabs__nav-btn
+
+  &__nav-btn {
+    border: 1px solid var(--ikonki-svetlo-seryy);
+    border-radius: 65px;
+    text-align: center;
+    padding: 8px 50px;
+    background: var(--belyy-osnovnoy);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: var(--zelenyy);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    @include mobile {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+    }
+
+    &:focus,
+    &:hover {
+      background: var(--zelenyy);
+      color: var(--belyy-osnovnoy);
+    }
+  }
+
+  // .tabs__content
+}
+
+.prod {
+  // .prod__text
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: var(--seryy-tekst-1);
+    @include mobile {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+      text-align: center;
+      color: var(--seryy-tekst-1);
+    }
+  }
+
+  // .prod__btn
+
+  &__btn {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: var(--belyy-osnovnoy);
+    padding: 15px 50px;
+    text-align: center;
+  }
+
+  // .prod__title
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 90%;
+    color: var(--osnovnoy);
+    padding: 180px 0 100px 0;
+    @include tablet {
+      text-align: center;
+    }
+    @include mobile {
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 150%;
+      color: var(--osnovnoy);
+    }
+  }
+
+  &__red {
+    color: var(--zelenyy);
+  }
+
+  // .prod__adv-block
+
+  &__adv-block {
+    display: flex;
+    gap: 40px;
+    @include mobile {
+      gap: 30px;
+    }
+  }
+
+  // .prod__img-done
+
+  &__img-done {
+    object-fit: contain;
+  }
+}
+
+.salats {
+  // .salats__content
+
+  // .salats__hero
+
+  &__hero {
+    display: flex;
+    gap: 40px;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // .salats__img
+
+  &__img {
+    max-width: 100%;
+    display: flex;
+    gap: 80px;
+    flex-shrink: 0;
+    &__img {
+      max-width: 100%;
+      height: auto;
+    }
+    @include tablet {
+      gap: 20px;
+    }
+  }
+
+  &__img img {
+    width: calc(
+      50% - 10px
+    ); /* каждая картинка занимает 50% ширины с учетом промежутка */
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 1; /* позволяет картинкам уменьшаться при необходимости */
+    flex-grow: 1; /* позволяет картинкам расти при необходимости */
+  }
+
+  // .salats__descriptions
+
+  &__descriptions {
+    padding-top: 14px;
+    @include tablet {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+      text-align: center;
+      color: var(--seryy-tekst-1);
+    }
+  }
+
+  // .salats__hero-text
+
+  &__hero-text {
+    width: 100%;
+  }
+
+  // .salats__button-block
+
+  &__button-block {
+    padding-top: 55px;
+  }
+
+  // .salats__btn
+
+  // .salats__adv
+
+  &__adv {
+    display: flex;
+    gap: 81px;
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .salats__title
+
+  // .salats__adv-left
+
+  &__adv-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  // .salats__adv-descr
+
+  // .salats__adv-text
+
+  &__adv-text {
+    max-width: 560px;
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  // .salats__adv-right
+
+  &__adv-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.microgreens {
+  // .microgreens__content
+
+  // .microgreens__img
+
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+
+  // .microgreens__descr
+
+  &__descr {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .microgreens__hero-text
+
+  &__hero-text {
+    text-align: center;
+    width: 90%;
+  }
+
+  // .microgreens__button-block
+
+  &__button-block {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  // .microgreens__btn
+
+  &__btn {
+  }
+
+  // .microgreens__adv
+
+  &__adv {
+  }
+
+  // .microgreens__title
+
+  &__title {
+  }
+
+  // .microgreens__adv-block
+
+  &__adv-block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-shrink: 0;
+    @include tablet {
+      display: flex;
+
+      flex-direction: column;
+    }
+  }
+
+  &__adv-wrapper {
+    display: flex;
+  }
+
+  &__adv-img {
+    display: inline-block;
+    transform: translate(-104%, -127px);
+    flex-shrink: 0;
+    margin-bottom: -154px;
+    @include tablet {
+      transform: translate(-119%, -127px);
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  // .microgreens__adv-descr
+
+  &__adv-descr {
+  }
+
+  // .microgreens__adv-text
+
+  &__adv-text {
+    max-width: 34%;
+    @include mobile {
+      max-width: 295px;
+      text-align: left;
+    }
+  }
+}
+
+.vegetables {
+  // .vegetables__content
+
+  &__content {
+  }
+
+  // .vegetables__hero
+
+  &__hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+
+  // .vegetables__desc
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+
+    // align-items: flex-end;
+    justify-content: center;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .vegetables__hero-text
+
+  &__hero-text {
+    // text-align: right;
+    padding-bottom: 30px;
+    width: 99%;
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  // .vegetables__button-block
+
+  &__button-block {
+    display: flex;
+    align-items: start;
+  }
+
+  &__btn {
+  }
+
+  // .vegetables__img
+
+  &__img {
+    flex-shrink: 0;
+  }
+
+  // .vegetables__adv
+
+  &__adv {
+    margin-bottom: 9px;
+  }
+
+  // .vegetables__title
+
+  &__title {
+  }
+
+  // .vegetables__adv-items
+
+  &__adv-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  // .vegetables__adv-item
+
+  &__adv-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .vegetables__adv-descr
+
+  &__adv-descr {
+    display: flex;
+    align-items: center;
+  }
+
+  // .vegetables__adv-text
+
+  &__adv-text {
+    width: 606px;
+    @include mobile {
+      text-align: left;
+      max-width: 295px;
+    }
+  }
+
+  // .vegetables__adv-img1
+
+  &__adv-img1 {
+    max-width: 100%;
+    height: auto;
+    transform: translate(-366px);
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__adv-img2 {
+    transform: translate(-262px);
+  }
+
+  &__adv-img3 {
+    transform: translate(250px);
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__adv-img4 {
+    transform: translate(207px);
+  }
+}
+
+.berries {
+  // .berries__content
+
+  &__content {
+  }
+
+  // .berries__hero
+
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  // .berries__desc
+
+  &__desc {
+  }
+
+  // .berries__hero-text
+
+  &__hero-text {
+    max-width: 672px;
+    padding-bottom: 50px;
+  }
+
+  // .berries__button-block
+
+  &__button-block {
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // .berries__btn
+
+  &__btn {
+  }
+
+  // .berries__img
+
+  &__img {
+  }
+
+  // .berries__adv
+
+  &__adv {
+    margin-bottom: -70px;
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  // .berries__title
+
+  &__title {
+  }
+
+  // .berries__adv-img
+
+  &__adv-img {
+  }
+
+  // .berries__adv-items
+
+  &__adv-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  // .berries__adv-item
+
+  &__adv-item {
+  }
+
+  // .berries__adv-text
+
+  &__adv-text {
+    max-width: 606px;
+    @include mobile {
+      text-align: left;
+    }
+  }
+}
+
+.mix {
+  // .mix__content
+
+  &__content {
+  }
+
+  // .mix__hero
+
+  &__hero {
+    display: flex;
+    gap: 40px;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  // .mix__hero-img
+
+  &__hero-img {
+  }
+
+  // .mix__hero-desc
+
+  &__hero-desc {
+  }
+
+  // .mix__hero-text
+
+  &__hero-text {
+    max-width: 630px;
+    padding-top: 68px;
+    padding-bottom: 60px;
+    @include mobile {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  // .mix__button-block
+
+  &__button-block {
+    @include mobile {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  // .mix__btn
+
+  &__btn {
+  }
+
+  // .mix__adv
+
+  &__adv {
+    margin-bottom: -13px;
+    z-index: 10;
+    position: relative;
+  }
+
+  // .mix__adv-section
+
+  &__adv-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @include mobile {
+      flex-direction: column;
+      padding-top: 90px;
+    }
+  }
+
+  // .mix__adv-items
+
+  &__adv-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  // .mix__adv-item1
+
+  &__adv-item1 {
+  }
+
+  // .mix__adv-text
+
+  &__adv-text {
+    max-width: 603px;
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  // .mix__adv-item2
+
+  &__adv-item2 {
+  }
+
+  // .mix__adv-img
+
+  &__adv-img {
+  }
+
+  &__adv-bg {
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    top: 195%;
+    right: 0.1%;
+    @include mobile {
+      display: none;
+    }
+  }
+}

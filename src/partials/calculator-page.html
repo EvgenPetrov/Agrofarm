@@ -1,0 +1,135 @@
+<section class="calculator">
+  <div class="container">
+    <div class="calculator__body">
+      <h2 class="calculator__title">Калькулятор вертикальной фермы</h2>
+      <div class="calculator__content">
+        <div class="calculator__left">
+          <h3 class="calculator__heading">Тип выращиваемой культуры</h3>
+          <div class="calculator__left_culture-type">
+            <label
+              ><input type="radio" name="culture" value="salad" /> Салат</label
+            >
+            <label
+              ><input type="radio" name="culture" value="berry" /> Ягода</label
+            >
+            <label
+              ><input type="radio" name="culture" value="microgreens" />
+              Микрозелень</label
+            >
+            <label
+              ><input type="radio" name="culture" value="vegetables" />
+              Овощи</label
+            >
+            <label
+              ><input type="radio" name="culture" value="mix" /> Микс</label
+            >
+          </div>
+          <div class="calculator__left_crop-type">
+            <label
+              ><input type="radio" name="crop" value="cucumbers" />
+              Огурцы</label
+            >
+            <label
+              ><input type="radio" name="crop" value="tomatoes" />
+              Помидоры</label
+            >
+          </div>
+          <div class="calculator__left_input-fields">
+            <div class="calculator__left_input-group">
+              <label for="area">Площадь фермы, кв. м</label>
+              <input type="number" id="area" />
+            </div>
+            <div class="calculator__left_input-group">
+              <label for="wage"
+                >Стоимость оплаты труда 1 сотрудника, руб/мес</label
+              >
+              <input type="number" id="wage" />
+            </div>
+            <div class="calculator__left_input-group">
+              <label for="electricity"
+                >Тариф за электроэнергию, руб. за кВт</label
+              >
+              <input type="number" id="electricity" />
+            </div>
+            <div class="calculator__left_input-group">
+              <label for="water">Тариф на водоснабжение, руб. за куб. м</label>
+              <input type="number" id="water" />
+            </div>
+            <div class="calculator__left_input-group">
+              <label for="costagri"
+                >Стоимость культуры на рынке, руб. за 1 кг</label
+              >
+              <input type="number" id="costagri" />
+            </div>
+            <div class="calculator__left_input-group">
+              <label for="rent">Стоимость аренды, руб. за 1 кв. м</label>
+              <input type="number" id="rent" />
+            </div>
+            <div class="calculator__left_input-group">
+              <label for="other">Иные расходы, руб.</label>
+              <input type="number" id="other" />
+            </div>
+          </div>
+        </div>
+        <div class="calculator__right">
+          <h3 class="calculator__heading">Характеристики фермы</h3>
+          <ul class="calculator__right_farm-characteristics">
+            <li>Площадь посадки, м2<span id="plantingArea">900</span></li>
+            <li>
+              Необходимая мощность, кВт
+              <span id="powerRequirement">3,500</span>
+            </li>
+            <li>
+              Среднее потребление энергии в сутки, кВт/час
+              <span id="energyConsumption">10</span>
+            </li>
+            <li>
+              Среднее потребление воды в сутки, м3
+              <span id="waterConsumption">5</span>
+            </li>
+            <li>
+              Предлагаемая стоимость фермы, тыс. руб.
+              <span id="farmCost">5</span>
+            </li>
+          </ul>
+          <h3 class="calculator__heading">Экономические показатели фермы</h3>
+          <ul class="calculator__right_economic-indicators">
+            <li>Урожайность горшки в мес.<span id="potYield">900</span></li>
+            <li>
+              Урожайность кг в мес.
+              <span id="yieldKg">3,500</span>
+            </li>
+            <li>
+              Выручка, руб.
+              <span id="revenue">10</span>
+            </li>
+            <li>
+              Стоимость электричества в мес., руб.
+              <span id="electricityCost">5</span>
+            </li>
+            <li>
+              ФОТ с НДФЛ и налогами, руб.
+              <span id="taxAndExpenses">900</span>
+            </li>
+            <li>
+              Аренда, руб.
+              <span id="rentCost">900</span>
+            </li>
+            <li>
+              Обслуживание фермы и прочие расходы
+              <span id="maintenanceCost">900</span>
+            </li>
+            <li>
+              Средняя прибыль в месяц, руб.
+              <span id="monthlyProfit">900</span>
+            </li>
+            <li>
+              Окупаемость, лет
+              <span id="paybackPeriod">5</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

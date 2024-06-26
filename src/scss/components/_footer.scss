@@ -1,0 +1,30 @@
+.footer {
+  z-index: 10;
+  padding-top: 84px;
+  padding-bottom: 25px;
+  // .footer--position
+
+  // .footer__nav
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+}
+
+.nav {
+  // .nav__phone-number
+
+  &__phone-number {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 148%;
+    color: var(--osnovnoy);
+  }
+}

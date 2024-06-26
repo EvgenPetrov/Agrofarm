@@ -1,0 +1,109 @@
+.benefits {
+  padding-top: 187px;
+  min-height: 353px;
+  background-image: url(../../img/benefits/benefits-central.jpg);
+  background-position: center calc(50% + 166px);
+  background-size: auto;
+  background-repeat: no-repeat;
+  @include mobile {
+    background-size: 80%;
+  }
+  // .benefits__title
+
+  &__title {
+    margin-bottom: 100px;
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  // .benefits__content
+
+  &__content {
+    background-image: url(../../img/benefits/benefits-cenral-border.svg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
+      gap: 440px;
+    }
+    @include mobile {
+      background-size: 95%;
+    }
+  }
+
+  // .benefits__left
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+  }
+
+  // .benefits__item
+
+  &__item {
+    display: flex;
+    gap: 30px;
+  }
+
+  // .benefits__image
+
+  &__image {
+  }
+
+  // .benefits__item-block
+
+  &__item-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h3 {
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 116%;
+      color: var(--osnovnoy);
+      @include mobile {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 116%;
+        color: var(--osnovnoy);
+      }
+    }
+  }
+
+  // .benefits__description
+
+  &__description {
+    width: 400px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: var(--seryy-tekst-1);
+    @include mobile {
+      width: 99%;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+      color: var(--seryy-tekst-1);
+    }
+  }
+
+  // .benefits__right
+
+  &__right {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+  }
+}

@@ -1,0 +1,217 @@
+.calculator {
+  padding-top: 94px;
+  min-height: 962px;
+  background: url(../../img/calculator-page/calculator-bg.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  // .calculator__body
+
+  &__body {
+    background: url();
+    z-index: 2;
+    position: relative;
+    border-radius: 50px;
+    max-width: 1400px;
+    height: auto;
+    padding: 0 80px 70px;
+    margin: 61px auto;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    background: var(--belyy-osnovnoy);
+    @include mobile {
+      padding: 0 20px 20px;
+      border-radius: 25px;
+    }
+  }
+
+  // .calculator__title
+
+  &__title {
+    padding-top: 54px;
+    padding-bottom: 57px;
+    text-align: center;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 90%;
+    color: var(--osnovnoy);
+    @include mobile {
+      padding: 20px auto;
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 150%;
+      color: var(--osnovnoy);
+    }
+  }
+
+  // .calculator__content
+
+  &__content {
+    display: flex;
+    gap: 96px;
+    justify-content: space-between;
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  // .calculator__left
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: var(--osnovnoy);
+  }
+
+  // .calculator__heading
+
+  &__heading {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 116%;
+    color: var(--osnovnoy);
+    @include mobile {
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 116%;
+      color: var(--osnovnoy);
+    }
+  }
+
+  // .calculator__left_culture-type
+
+  &__left_culture-type {
+    display: flex;
+    gap: 32px;
+    padding: 15px 0 29px 0;
+    @include mobile {
+      gap: 20px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+      color: var(--osnovnoy);
+    }
+  }
+
+  label {
+    &:hover {
+      color: var(--zelenyy);
+    }
+  }
+
+  // .calculator__left_crop-type
+
+  &__left_crop-type {
+    display: flex;
+    gap: 25px;
+    visibility: hidden;
+    @include mobile {
+      gap: 20px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+      color: var(--osnovnoy);
+    }
+  }
+
+  // .calculator__left_input-fields
+
+  &__left_input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 29px;
+
+    input {
+      padding: 8px;
+      width: 200px;
+      height: 40px;
+      border: 1px solid #c1c1c1;
+      border-radius: 5px;
+      @include mobile {
+        width: 302px;
+      }
+    }
+  }
+
+  // .calculator__left_input-group
+
+  &__left_input-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @include small-tablet {
+      justify-content: space-between;
+    }
+    @include mobile {
+      align-items: start;
+      flex-direction: column;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+      color: var(--osnovnoy);
+    }
+  }
+
+  // .calculator__right
+
+  &__right {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 148%;
+    color: var(--seryy-tekst-1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 42%;
+    @include mobile {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 148%;
+      color: var(--seryy-tekst-1);
+    }
+
+    li {
+      display: flex;
+
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  // .calculator__right_farm-characteristics
+
+  &__right_farm-characteristics {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  // .calculator__right_economic-indicators
+
+  &__right_economic-indicators {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.calculator__left_crop-type.visible {
+  visibility: visible; /* Показываем элемент при добавлении класса visible */
+}

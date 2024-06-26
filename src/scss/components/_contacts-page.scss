@@ -1,0 +1,124 @@
+.contacts {
+  padding-top: 95px;
+  min-height: 1015px;
+  background-image: url(../../img/contacts-page/contacts-background.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include tablet {
+    background-image: none;
+  }
+
+  // .contacts__title
+
+  &__title {
+    padding-top: 73px;
+    padding-bottom: 96px;
+    text-transform: uppercase;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 90%;
+    color: var(--osnovnoy);
+    @include mobile {
+      font-family: var(--second-family);
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 150%;
+      color: var(--osnovnoy);
+    }
+  }
+
+  // .contacts__body
+
+  &__body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: var(--seryy-tekst-1);
+  }
+
+  // .contacts__basic
+
+  &__basic {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  // .contacts__paragraf
+
+  &__paragraf {
+    width: 46%;
+    @include mobile {
+      width: 100%;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+      color: var(--seryy-tekst-1);
+    }
+  }
+
+  .contacts__text-grey {
+    @include mobile {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+      color: var(--seryy-tekst-1);
+    }
+  }
+
+  // .contacts__info
+
+  &__info {
+    display: flex;
+    gap: 173px;
+    @include mobile {
+      gap: 102px;
+    }
+  }
+
+  // .contacts__info-shedule
+
+  // .contacts__text-black
+
+  &__text-black {
+    color: var(--osnovnoy);
+    @include mobile {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 179%;
+      color: var(--osnovnoy);
+    }
+  }
+
+  // .contacts__info-phone
+
+  // .contacts__map
+
+  &__map {
+    border-radius: 20px;
+    width: 680px;
+    height: 326px;
+    background-color: rgb(216, 199, 199);
+    @include tablet {
+      margin: 0 auto;
+    }
+    @include mobile {
+      width: 342px;
+      height: 326px;
+    }
+  }
+
+  &__ymaps-2-1-79-map {
+    border-radius: 20px;
+  }
+
+  [class*="copyrights-pane"] {
+    display: none !important;
+  }
+}
